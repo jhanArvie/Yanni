@@ -1,0 +1,44 @@
+/* Custom Styles */
+:where([class^="ri-"])::before { content: "\f3c2"; }
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #333333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+}
+
+.hero-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://readdy.ai/api/search-image?query=elegant%20luxury%20nail%20art%20design%20with%20gold%20accents%20on%20a%20woman%5Cs%20hand%2C%20professional%20studio%20lighting%2C%20soft%20focus%2C%20high-end%20nail%20salon%20atmosphere%2C%20neutral%20background%20that%20transitions%20to%20white%20on%20the%20left%20side%2C%20perfect%20manicure%20with%20intricate%20details%2C%20glossy%20finish&width=1920&height=1080&seq=nail1&orientation=landscape');
+    background-size: cover;
+    background-position: center;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item {
+    transition: all 0.3s ease;
+}
+
+.quick-view {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .quick-view {
+    opacity: 1;
+}
+
+.filter-btn.active {
+    color: #D4AF37;
+    border-bottom: 2px solid #D4AF37;
+}
+
+input:focus {
+    outline: none;
+}
